@@ -63,7 +63,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-grow: 2; /* Aumenta o espaço do item */
+    flex-grow: 2; /* Aumenta o item */
 }
 
 .videoSobre-sobre-list {
@@ -72,6 +72,7 @@
 
 .videoSobre-video {
     flex-grow: 1;
+    flex-shrink: 2; /* Diminui item */
 }
 
 /* Parte mobile */
@@ -117,6 +118,13 @@
 
     .cabecalhoPrincipal-nav-link-app {
         order: -1; /* Muda a ordem de exibição(Padrão é zero) */
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
     }
 
 }
